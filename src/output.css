@@ -7,8 +7,14 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+<<<<<<< HEAD
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --spacing: 0.25rem;
+=======
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-bold: 700;
+>>>>>>> 46bfdc0d0a1e17663b9d7ed424401fa851ac4e15
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -162,6 +168,7 @@
   }
 }
 @layer utilities {
+<<<<<<< HEAD
   .flex {
     display: flex;
   }
@@ -192,10 +199,20 @@
   }
   .bg-amber-400 {
     background-color: var(--color-amber-400);
+=======
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+>>>>>>> 46bfdc0d0a1e17663b9d7ed424401fa851ac4e15
   }
   .underline {
     text-decoration-line: underline;
   }
+<<<<<<< HEAD
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -210,12 +227,22 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+=======
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+>>>>>>> 46bfdc0d0a1e17663b9d7ed424401fa851ac4e15
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+<<<<<<< HEAD
       --tw-border-style: solid;
       --tw-outline-style: solid;
+=======
+      --tw-font-weight: initial;
+>>>>>>> 46bfdc0d0a1e17663b9d7ed424401fa851ac4e15
     }
   }
 }
